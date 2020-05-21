@@ -36,7 +36,7 @@ def comment_line_in_file(file_name, line_to_comment):
     for i in d:
         if i.startswith(line_to_comment):
             f.write("#"+ i)
-            print('\n\Added # sign from line begining with "{line_to_comment}" \t{i}\n\tin file "{file_name}"\n\n.'.format(**locals()))
+            print('\n\tAdded # sign from line begining with "{line_to_comment}" \t{i}\n\tin file "{file_name}"\n\n.'.format(**locals()))
         else:
             f.write(i)
     f.truncate()
